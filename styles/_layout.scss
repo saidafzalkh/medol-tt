@@ -1,6 +1,9 @@
+.page-wrapper {
+  min-height: 100vh;
+}
+
 .container {
   max-width: 1360px;
-  min-height: 100vh;
 
   margin: 0 auto;
 
@@ -11,4 +14,8 @@
   @media screen and (max-width: 375px) {
     padding: 0 20px;
   }
+}
+
+.hero {
+  min-height: 100vh;
 }

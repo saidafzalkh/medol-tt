@@ -1,5 +1,5 @@
 .hero {
-  background: url("../public/blur-hospital.jpg") rgba(211, 211, 211, 0.5) center
+  background: url("../public/blur-hospital.png") rgba(211, 211, 211, 0.5) center
     no-repeat;
 }
 
@@ -151,5 +151,75 @@
 
   .hidden {
     display: none;
+  }
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  .slide {
+    display: none;
+    width: 100%;
+    height: 600px;
+
+    &__image {
+      width: 50%;
+    }
+
+    &.active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      color: $primary;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 4.5px;
+    }
+
+    p {
+      color: $text-primary;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+
+      margin-top: 30px;
+    }
+  }
+}
+
+.dot-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $background;
+    border: 1px solid $secondary;
+    margin: 0 4px;
+    cursor: pointer;
+
+    &.active {
+      background-color: $secondary;
+    }
   }
 }
