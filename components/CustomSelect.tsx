@@ -39,7 +39,7 @@ export default function CustomSelect() {
           src={selected.image}
           alt={selected.value}
         />
-        <span className="option-label">{selected.label}</span>
+        <span className="option-label label">{selected.label}</span>
         <Icons.arrowBottom size={11} />
       </div>
 

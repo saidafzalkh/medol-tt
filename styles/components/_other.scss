@@ -5,6 +5,11 @@
 
 .svg-icons {
   fill: $primary;
+
+  @media screen and (max-width: 425px) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .separator {
@@ -22,5 +27,9 @@
     height: 50px;
     background-color: $background;
     border-radius: 25px;
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 40px;
   }
 }
