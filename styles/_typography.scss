@@ -9,3 +9,16 @@ a {
     color: $secondary;
   }
 }
+
+.section-title {
+  color: $primary;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  text-align: center;
+  padding: 60px 0;
+
+  text-transform: capitalize;
+}

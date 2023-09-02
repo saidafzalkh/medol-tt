@@ -1,0 +1,17 @@
+.services {
+  &__wrapper {
+    background: url("../../public/services-bg.png"),
+      lightgray 50% / cover no-repeat;
+    background-position: center bottom;
+    padding: 100px 0;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1300px) {
+      justify-content: space-around;
+    }
+  }
+}

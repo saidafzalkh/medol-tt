@@ -19,3 +19,27 @@
 .hero {
   min-height: 100vh;
 }
+
+.products {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 413px);
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 940px) {
+      grid-template-columns: repeat(2, 334px);
+      gap: 30px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 765px) {
+      grid-template-columns: repeat(1, 335px);
+    }
+  }
+}
