@@ -23,7 +23,9 @@ export default function Partners() {
   ];
 
   return (
-    <section className="section partners">
+    <section className="section partners arrows">
+      <div className="arrows__container"></div>
+
       <Title>ПАРТНЕРЫ</Title>
 
       <div className="container partners__container">

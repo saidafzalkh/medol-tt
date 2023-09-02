@@ -29,9 +29,14 @@
       font-weight: 300;
       line-height: 173.187%; /* 34.637px */
       letter-spacing: 1.2px;
+      word-wrap: break-word;
 
       @media screen and (max-width: 1280px) {
         width: 100%;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
       }
     }
 
@@ -39,6 +44,10 @@
       padding: 15px 60px;
       font-size: 20px;
       align-self: flex-start;
+
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
     }
 
     img {
