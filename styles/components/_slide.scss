@@ -15,7 +15,6 @@
   .slide {
     display: none;
     width: 100%;
-    height: 600px;
 
     &__image {
       width: 50%;
@@ -44,6 +43,10 @@
       font-weight: 500;
       line-height: normal;
       letter-spacing: 4.5px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 32;
+      }
     }
 
     p {
@@ -54,6 +57,10 @@
       line-height: 40px;
 
       margin-top: 30px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 20;
+      }
     }
   }
 }

@@ -16,6 +16,13 @@
       @media screen and (max-width: 1200px) {
         margin-right: auto;
       }
+
+      img {
+        @media screen and (max-width: 600px) {
+          width: 134px;
+          height: 38px;
+        }
+      }
     }
   }
 
