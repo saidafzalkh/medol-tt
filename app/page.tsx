@@ -1,5 +1,6 @@
 import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
+import News from "@/components/sections/News";
 import Products from "@/components/sections/Products";
 import Services from "@/components/sections/Services";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Products />
       <Services />
       <About />
+      <News />
     </main>
   );
 }
