@@ -4,6 +4,9 @@ import Link from "next/link";
 import CustomSelect from "@/components/CustomSelect";
 import Icons from "@/components/Icons";
 
+import Menu from "./Menu";
+import Nav from "./Nav";
+
 export default function Header() {
   return (
     <header className="header">
@@ -29,49 +32,33 @@ export default function Header() {
             </span>
           </div>
 
-          <Link href="/">
+          <Link href="/" className="logo">
             <Image src="/logo.png" alt="Medol Logo" width={200} height={58} />
           </Link>
 
-          <div className="header__icon-block">
+          <div className="header__icon-block md map">
+            <Icons.map size={25} />
+          </div>
+
+          <div className="header__icon-block md">
+            <Icons.phone size={22} />
+          </div>
+
+          <div className="header__icon-block search">
             <Icons.search size={26} />
           </div>
 
-          <div className="header__button">
+          <div className="header__button facebook">
             <Icons.facebook size={22} />
             <small>Мы на Facebook</small>
           </div>
 
           <CustomSelect />
+
+          <Menu />
         </div>
 
-        <nav className="nav header__nav">
-          <ul>
-            <li>
-              <Link href="#">МАГАЗИН</Link>
-            </li>
-            <div className="separator"></div>
-            <li className="active">
-              <Link href="#">О КОМПАНИИ</Link>
-            </li>
-            <div className="separator"></div>
-            <li>
-              <Link href="#">ПРОДУКЦИЯ</Link>
-            </li>
-            <div className="separator"></div>
-            <li>
-              <Link href="#">УСЛУГИ</Link>
-            </li>
-            <div className="separator"></div>
-            <li>
-              <Link href="#">АКЦИИ И НОВОСТИ</Link>
-            </li>
-            <div className="separator"></div>
-            <li>
-              <Link href="#">ОБРАТНАЯ СВЯЗЬ</Link>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </div>
     </header>
   );

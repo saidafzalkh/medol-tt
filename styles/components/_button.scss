@@ -1,0 +1,20 @@
+.primary-button {
+  border-radius: 35px;
+  background: linear-gradient(90deg, $primary 0%, $secondary 100%);
+  padding: 21px 71px;
+  display: inline-block;
+
+  color: $background;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-top: 40px;
+
+  &:hover {
+    border-radius: 35px;
+    background: #00c9c9;
+    color: $background;
+  }
+}

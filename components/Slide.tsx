@@ -1,11 +1,14 @@
 "use client";
 
+import { link } from "fs";
 import Image from "next/image";
 import React, { useState } from "react";
 
 import slide1 from "@/public/slides/slide-1.png";
 import slide2 from "@/public/slides/slide-2.png";
 import slide3 from "@/public/slides/slide-3.png";
+
+import ButtonLink from "./Button";
 
 const Slide: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState<number>(2);
@@ -20,6 +23,7 @@ const Slide: React.FC = () => {
       content:
         "Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии",
       image: slide2,
+      link: "#",
     },
     {
       id: 2,
@@ -31,6 +35,7 @@ const Slide: React.FC = () => {
       content:
         "Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии",
       image: slide1,
+      link: "#",
     },
     {
       id: 3,
@@ -42,6 +47,7 @@ const Slide: React.FC = () => {
       content:
         "Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии",
       image: slide3,
+      link: "#",
     },
   ];
 
@@ -61,6 +67,7 @@ const Slide: React.FC = () => {
               <div className="slide__content">
                 {slide.title}
                 <p>{slide.content}</p>
+                <ButtonLink text="Подробнее" link={slide.link} />
               </div>
               <div className="slide__image">
                 <Image src={slide.image} alt="Slider Image" />

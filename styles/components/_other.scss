@@ -1,0 +1,26 @@
+.hero {
+  background: url("../../public/blur-hospital.png") rgba(211, 211, 211, 0.5)
+    center no-repeat;
+}
+
+.svg-icons {
+  fill: $primary;
+}
+
+.separator {
+  width: 2px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.menu {
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    @include flex-row;
+    width: 60px;
+    height: 50px;
+    background-color: $background;
+    border-radius: 25px;
+  }
+}

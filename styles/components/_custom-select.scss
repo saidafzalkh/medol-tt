@@ -1,0 +1,60 @@
+.custom-select {
+  position: relative;
+  background-color: $background;
+  height: 50px;
+  width: 135px;
+  border-radius: 25px;
+  @include flex-row;
+
+  color: $primary;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media screen and (max-width: 1200px) {
+    width: 85px;
+  }
+
+  .option-label {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__selected {
+    @include flex-row;
+    gap: 10px;
+    cursor: pointer;
+    color: $primary;
+  }
+
+  &__options {
+    position: absolute;
+    top: 53px;
+    right: 0;
+
+    background-color: $background;
+    padding: 15px 0;
+    border-radius: 15px;
+
+    .option {
+      color: $primary;
+      background-color: $background;
+      width: 154px;
+      height: 40px;
+      @include flex-row(flex-start);
+      gap: 10px;
+      padding-left: 29px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ecf5f5;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
