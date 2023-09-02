@@ -1,6 +1,7 @@
 import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
 import News from "@/components/sections/News";
+import Partners from "@/components/sections/Partners";
 import Products from "@/components/sections/Products";
 import Services from "@/components/sections/Services";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <About />
       <News />
+      <Partners />
     </main>
   );
 }

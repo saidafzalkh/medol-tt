@@ -1,0 +1,21 @@
+.partners-card {
+  width: 275px;
+  height: 130px;
+  border-radius: 30px;
+  border: 1px solid #ececec;
+  background: #fff;
+
+  @include flex-row;
+
+  &:nth-child(n + 5) {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &:nth-child(n + 2) {
+    @media screen and (max-width: 765px) {
+      display: none;
+    }
+  }
+}

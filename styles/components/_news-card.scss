@@ -11,7 +11,9 @@
   padding: 30px;
 
   border-radius: 35px;
-  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  border: 2px solid #f6f6f6;
+  opacity: 0.9;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(255, 255, 255, 0) 100%);
 
   &__image {
     display: inline-block;
@@ -29,7 +31,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px;
   }
 
   &__title {
@@ -47,12 +49,14 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
   }
 
   a.primary-button {
     padding: 15px 80px;
     font-size: 20px;
+
+    margin-bottom: -50px;
   }
 
   a:hover {
