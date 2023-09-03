@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { PrimaryButton } from "../Button";
 import Icons from "../Icons";
+import ModalButton from "../ModalButton";
 
 export default function Footer() {
   return (
@@ -42,9 +43,7 @@ export default function Footer() {
                   </span>
                 </div>
 
-                <PrimaryButton className="footer__button">
-                  Оставить заявку
-                </PrimaryButton>
+                <ModalButton buttonText="Оставить заявку" />
               </div>
             </div>
             <div className="footer__about">
