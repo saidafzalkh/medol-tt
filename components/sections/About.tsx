@@ -10,7 +10,7 @@ export default function About() {
     <section className="section about">
       <Title>О КОМПАНИИ</Title>
 
-      <div className="container">
+      <div className="container about__wrapper">
         <div className="about__content">
           <Image src={aboutImage} alt="About Medol Medical" />
           <div className="about__text">
