@@ -8,6 +8,7 @@ import p7 from "@/public/partners/7.png";
 import p8 from "@/public/partners/8.png";
 
 import PartnersCard from "../cards/PartnersCard";
+import Icons from "../Icons";
 import Title from "../Title";
 
 export default function Partners() {
@@ -23,9 +24,7 @@ export default function Partners() {
   ];
 
   return (
-    <section className="section partners arrows">
-      <div className="arrows__container"></div>
-
+    <section className="section partners">
       <Title>ПАРТНЕРЫ</Title>
 
       <div className="container partners__container">

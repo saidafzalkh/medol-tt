@@ -1,0 +1,168 @@
+.footer {
+  background: url("../../public/blur-hospital.png") rgba(211, 211, 211, 0.5)
+    center no-repeat;
+
+  padding: 40px 0 20px 0;
+
+  small {
+    color: #353535;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.72px;
+
+    margin-top: 70px;
+  }
+
+  h3 {
+    color: #595959;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 107.692% */
+    letter-spacing: 1.04px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 1300px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__main,
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__main {
+    @media screen and (max-width: 1300px) {
+      max-width: 700px;
+    }
+
+    .logo {
+      @media screen and (max-width: 670px) {
+        display: none;
+      }
+    }
+  }
+  &__menu {
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      row-gap: 22px;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      align-content: center;
+      justify-items: start;
+      gap: 20px;
+      margin-right: 20px;
+
+      @media screen and (max-width: 560px) {
+        grid-template-columns: 1fr;
+        row-gap: 22px;
+      }
+
+      address,
+      span {
+        color: #5a5a5a;
+      }
+
+      a {
+        color: #5a5a5a;
+        &:hover {
+          color: #5a5a5a;
+        }
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+
+    p {
+      color: #585858;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.72px;
+    }
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    gap: 60px;
+    ul,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li a {
+      color: #595959;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.64px;
+
+      &:hover {
+        text-decoration: underline;
+        color: $secondary;
+      }
+    }
+  }
+
+  &__icon-block {
+    min-width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: $background;
+
+    @include flex-row;
+
+    @media screen and (max-width: 425px) {
+      min-width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__button {
+    padding: 13px 30px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+    margin-top: 0;
+
+    font-size: 20px;
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+  }
+
+  &__line-block {
+    @include flex-row;
+    gap: 20px;
+  }
+}

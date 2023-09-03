@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import News from "@/components/sections/News";
 import Partners from "@/components/sections/Partners";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <News />
       <Partners />
+      <Footer />
     </main>
   );
 }

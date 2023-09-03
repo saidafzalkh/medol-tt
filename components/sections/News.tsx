@@ -1,6 +1,7 @@
 import newsImage from "@/public/news.jpg";
 
 import NewsCard from "../cards/NewsCard";
+import Icons from "../Icons";
 import SectionLink from "../SectionLink";
 import Title from "../Title";
 
@@ -40,6 +41,17 @@ export default function News() {
       <Title>НОВОСТИ</Title>
 
       <div className="container">
+        <div className="arrows">
+          <div className="arrows__container">
+            <div className="arrows__block">
+              <Icons.arrowLeft />
+            </div>
+            <div className="arrows__block">
+              <Icons.arrowRight />
+            </div>
+          </div>
+        </div>
+
         <div className="services__grid news__container">
           {news.map((newsItem) => (
             <NewsCard key={newsItem.id} data={newsItem} />
