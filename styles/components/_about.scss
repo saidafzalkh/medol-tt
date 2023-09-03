@@ -33,6 +33,9 @@
     @media screen and (max-width: 375px) {
       border: none;
       box-shadow: none;
+      width: 100%;
+      padding: 27px 0;
+      border-radius: 0;
     }
 
     p {
