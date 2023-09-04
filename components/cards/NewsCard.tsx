@@ -16,7 +16,7 @@ type Props = {
 export default function NewsCard({ data }: Props) {
   return (
     <div className="news-card">
-      <div className="news-card__image">
+      <div data-aos="fade-down" className="news-card__image">
         <Image objectFit="fill" src={data.image} alt={data.title} />
       </div>
 

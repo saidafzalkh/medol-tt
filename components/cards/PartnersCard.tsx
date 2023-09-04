@@ -8,7 +8,7 @@ type Props = {
 
 export default function PartnersCard({ data }: Props) {
   return (
-    <div className="partners-card">
+    <div data-aos="flip-left" className="partners-card">
       <Image src={data.image} alt="partner company" />
     </div>
   );

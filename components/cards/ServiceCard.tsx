@@ -13,7 +13,7 @@ type Props = {
 
 export default function ServiceCard({ data }: Props) {
   return (
-    <div className="service-card">
+    <div data-aos="fade-down" data-aos-easing="linear" className="service-card">
       <div className="service-card__image">
         <Image src={data.image} alt={data.title} />
       </div>

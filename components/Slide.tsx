@@ -1,8 +1,10 @@
 "use client";
 
-import { link } from "fs";
+import "aos/dist/aos.css";
+
+import AOS from "aos";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import slide1 from "@/public/slides/slide-1.png";
 import slide2 from "@/public/slides/slide-2.png";
@@ -12,6 +14,20 @@ import ButtonLink from "./Button";
 
 const Slide: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState<number>(2);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+    let current = 2;
+    const interval = setInterval(() => {
+      setActiveSlide(current);
+      current++;
+      if (current === 4) current = 1;
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const slides = [
     {
       id: 1,
@@ -70,7 +86,11 @@ const Slide: React.FC = () => {
                 <ButtonLink text="Подробнее" link={slide.link} />
               </div>
               <div className="slide__image">
-                <Image src={slide.image} alt="Slider Image" />
+                <Image
+                  data-aos="zoom-in"
+                  src={slide.image}
+                  alt="Slider Image"
+                />
               </div>
             </div>
           ))}

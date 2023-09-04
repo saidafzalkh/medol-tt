@@ -1,0 +1,49 @@
+.hamburger-menu {
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: $background;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.5s linear;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  &.open {
+    .line {
+      &:first-child,
+      &:last-child {
+        transform: translateY(9px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+    }
+
+    .menu-items {
+      @include flex-row;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+}
