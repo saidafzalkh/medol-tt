@@ -1,3 +1,11 @@
+.service-card__wrapper {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+
+  width: 100%;
+  @include flex-row;
+}
+
 .service-card {
   display: flex;
   flex-direction: column;
