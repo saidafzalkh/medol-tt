@@ -1,10 +1,14 @@
+.partners-card__wrapper {
+  @include flex-row;
+}
+
 .partners-card {
   width: 275px;
   height: 130px;
   border-radius: 30px;
   border: 1px solid #ececec;
   background: #fff;
-
+  margin: 20px 0;
   @include flex-row;
 
   &:nth-child(n + 5) {

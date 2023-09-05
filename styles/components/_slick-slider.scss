@@ -24,3 +24,26 @@
     @include flex-row;
   }
 }
+
+.slick-dots {
+  li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $background;
+    border: 1px solid $secondary;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  li button {
+    opacity: 0;
+  }
+
+  li.slick-active {
+    background-color: #00c9c9;
+  }
+}
+
+ul.slick-dots {
+  padding-top: 15px;
+}
