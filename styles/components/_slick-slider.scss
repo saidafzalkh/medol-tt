@@ -1,0 +1,26 @@
+.slick-slider .slick-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  @include flex-row;
+  z-index: 999;
+
+  &.slick-prev::before {
+    content: url("../../public/icons/a-left.svg");
+  }
+
+  &.slick-next::before {
+    content: url("../../public/icons/a-right.svg");
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: $secondary;
+    @include flex-row;
+  }
+}
