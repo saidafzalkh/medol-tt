@@ -67,11 +67,10 @@
       font-weight: 500;
       line-height: normal;
 
-      padding: 18px 0;
-      text-align: center;
-
       @media screen and (max-width: 425px) {
         width: 100%;
+        padding: 18px 0;
+        text-align: center;
       }
     }
   }
