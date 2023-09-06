@@ -5,6 +5,12 @@
   background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
   @include flex-row;
   z-index: 999;
+  &.slick-next {
+    right: -3px;
+  }
+  &.slick-prev {
+    left: -3px;
+  }
 
   &.slick-prev::before {
     content: url("../../public/icons/a-left.svg");
