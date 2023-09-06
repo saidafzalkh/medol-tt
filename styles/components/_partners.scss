@@ -21,3 +21,10 @@
 
   margin-bottom: 80px;
 }
+
+.partners__container .slick-slider {
+  padding: 0 40px;
+  @media screen and (max-width: 735px) {
+    padding: 0;
+  }
+}
