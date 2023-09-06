@@ -14,6 +14,15 @@
     content: url("../../public/icons/a-right.svg");
   }
 
+  @media screen and (max-width: 375px) {
+    &.slick-next {
+      right: -3px;
+    }
+    &.slick-prev {
+      left: -3px;
+    }
+  }
+
   &:hover,
   &:active,
   &:focus {
