@@ -55,6 +55,8 @@ const settings = {
       breakpoint: 765,
       settings: {
         slidesToShow: 1,
+        dots: false,
+        autoplay: false,
       },
     },
   ],
