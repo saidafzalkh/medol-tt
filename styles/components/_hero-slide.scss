@@ -66,9 +66,13 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      width: 100%;
+
       padding: 18px 0;
       text-align: center;
+
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
     }
   }
 }
